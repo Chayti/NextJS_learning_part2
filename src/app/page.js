@@ -1,5 +1,7 @@
 'use client'
 
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import styles from './page.module.css'
 
@@ -18,8 +20,20 @@ export default function Home() {
     )
   }
 
+  const router = useRouter();
+  const navigate = (route) => {
+    router.push(`/${route}`)
+  }
+
   return (
     <main className={styles.main}>
+
+      <Link href="/login">Go to login page</Link>
+      <Link href="/about">Go to about page</Link>
+
+      <button onClick={() => router.push('/login')}>Go to login</button>
+      <button onClick={() => navigate('about')}>Go to about</button>
+
       <h1>home page</h1>
       <User name="Chayti" />
       <User name="Ridoy" />
