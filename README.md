@@ -13,7 +13,7 @@
 - [react-essentials page from docs](https://nextjs.org/docs/getting-started/react-essentials)
 
 # Day-3:
-- Basic file based routing
+- Basic file based routing (App Router)
 - pattern -> localhost:3000/login
     - src/login/page.js/ .jsx
     - src/about/page.js/ .jsx
@@ -25,4 +25,13 @@
 - [useRouter](https://nextjs.org/docs/app/api-reference/functions/use-router)
 - Nested Routing
 
-
+# Day-4
+- [App Routing & it's sub categories](https://nextjs.org/docs/app/building-your-application/routing)
+- [Layout](https://nextjs.org/docs/app/api-reference/file-conventions/layout)
+- Conditional Layout
+- [usePathname](https://nextjs.org/docs/app/api-reference/functions/use-pathname)
+- Catch-all segments in routing
+- Global 404 page
+- Route specific 404 page using catch-all segments
+- [Middleware](https://nextjs.org/docs/app/building-your-application/routing/middleware)
+- [Rendering & all of it's subcategories](https://nextjs.org/docs/app/building-your-application/rendering)

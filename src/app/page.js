@@ -30,11 +30,15 @@ export default function Home() {
 
       <Link href="/login">Go to login page</Link>
       <Link href="/about">Go to about page</Link>
+      <h1>Dynamic routing | Student List</h1>
+      <Link href="/studentlist">Go to student list page</Link>
+      <hr />
 
       <button onClick={() => router.push('/login')}>Go to login</button>
       <button onClick={() => navigate('about')}>Go to about</button>
 
-      <h1>home page</h1>
+      <h1 >home page</h1>
+
       <User name="Chayti" />
       <User name="Ridoy" />
       <h1>Events, function, state with {name}</h1>
