@@ -35,3 +35,17 @@
 - Route specific 404 page using catch-all segments
 - [Middleware](https://nextjs.org/docs/app/building-your-application/routing/middleware)
 - [Rendering & all of it's subcategories](https://nextjs.org/docs/app/building-your-application/rendering)
+
+# Day-5
+- CSR vs SSR
+- [Fetch API data in client component](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating)
+- [Fetch API in server component](https://nextjs.org/docs/app/building-your-application/data-fetching/patterns)
+- Client component with server component
+- [CSS with NextJS](https://nextjs.org/docs/app/building-your-application/styling)
+    - Global css
+    - Inline css
+    - style with usestate on button click
+    - internal css not allowed in nextJS
+    - CSS Modules
+    - Conditional style
+- Import path outside app.js with @

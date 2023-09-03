@@ -39,6 +39,13 @@ export default function Home() {
 
       <h1 >home page</h1>
 
+      <Link href="/productlist">Go to product list page on client component</Link>
+      <br />
+      <br />
+      <Link href="/productlistserverside">Go to product list page on server component</Link>
+      <br />
+      <br />
+      <Link href="/user">User page</Link>
       <User name="Chayti" />
       <User name="Ridoy" />
       <h1>Events, function, state with {name}</h1>
