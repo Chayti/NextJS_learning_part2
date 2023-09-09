@@ -15,8 +15,8 @@ export default async function Page() {
             <Link href={"/"}>Go to Home</Link>
             <h2>Product list fetching on server component</h2>
             {
-                products.map((item, key) => <div>
-                    <h3 key={key}>Name: {item.title}</h3>
+                products.map((item, id) => <div key={id}>
+                    <h3>Name: {item.title}</h3>
                     <Product price={item.price} />
 
                 </div>

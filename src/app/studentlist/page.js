@@ -12,7 +12,7 @@ export default function StudentList() {
             <Link href="/">Go to home</Link>
             <hr />
             {
-                data.map(singleData => <Link style={{ marginRight: "5px" }} href={`studentlist/${singleData.id}`}>{singleData.name}</Link>)
+                data.map((singleData, id) => <Link key={id} style={{ marginRight: "5px" }} href={`studentlist/${singleData.id}`}>{singleData.name}</Link>)
             }
         </div>
     )

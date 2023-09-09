@@ -49,3 +49,18 @@
     - CSS Modules
     - Conditional style
 - Import path outside app.js with @
+
+# Day-6
+- [Optimization](https://nextjs.org/docs/app/building-your-application/optimizing)
+    - Image optimization
+        - Public folder image shown
+        - Configuration for external image url
+    - Font Optimization
+    - generateMetadata()
+    - Script component
+    - Loading feature
+    - Static assets
+- Production build
+    - [Export static html page](https://nextjs.org/docs/app/building-your-application/deploying)
+- [Default file conventions](https://nextjs.org/docs/app/api-reference/file-conventions)
+- [Default Components](https://nextjs.org/docs/app/api-reference/components)

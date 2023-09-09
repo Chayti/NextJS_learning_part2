@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import custom from '../custom.module.css'
 import outside from '@/styles/outside.module.css'
+import Script from "next/script";
 
 export default function Page() {
     const [h4Style, seth4Style] = useState({ backgroundColor: "bisque" })
@@ -13,6 +14,12 @@ export default function Page() {
 
     return (
         <div>
+
+            <Script
+                src="./location.js"
+                onLoad={() => console.log("file loaded")}
+            />
+
             <Link href="/">Go to home</Link>
             <h1 style={{ backgroundColor: "yellow" }}>User page</h1>
             <h4 style={h4Style}>Hello user</h4>
@@ -25,6 +32,7 @@ export default function Page() {
             <p className={outside.main}>Modular style</p>
             <button onClick={() => seth4Style({ backgroundColor: "orange" })}>Update h4 style</button>
             <p id={custom.orange}>Bye bye</p>
+
         </div>
     )
 }

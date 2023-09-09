@@ -1,9 +1,19 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import styles from './page.module.css'
+import Profile from '../../public/vercel.svg'
+import { Roboto } from 'next/font/google'
+
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  style: 'italic'
+})
 
 export default function Home() {
 
@@ -24,6 +34,8 @@ export default function Home() {
   const navigate = (route) => {
     router.push(`/${route}`)
   }
+
+  console.log(Profile)
 
   return (
     <main className={styles.main}>
@@ -56,6 +68,22 @@ export default function Home() {
 
       {/* call as function */}
       {InnerComponent()}
+
+      <Image
+        src={Profile}
+      />
+
+      <img src={Profile.src} />
+
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Barbie_The_Movie_Logo.png"
+        width="400"
+        height="200"
+      />
+
+      <h1 style={{ fontFamily: 'Roboto', fontWeight: 100 }}>Font optimization checking</h1>
+      <h1 className={roboto.className}>Font Optimization with nextjs font feature</h1>
+
     </main>
   )
 }

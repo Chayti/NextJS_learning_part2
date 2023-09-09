@@ -9,3 +9,10 @@ export default function About() {
         </div>
     )
 }
+
+export function generateMetadata() {
+    return {
+        title: 'About page title',
+        description: 'About page description'
+    }
+}
