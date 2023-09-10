@@ -56,7 +56,7 @@
         - Public folder image shown
         - Configuration for external image url
     - Font Optimization
-    - generateMetadata()
+    - [generateMetadata()](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
     - Script component
     - Loading feature
     - Static assets
